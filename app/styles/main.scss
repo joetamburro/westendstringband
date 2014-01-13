@@ -25,15 +25,23 @@ body {
 
 /* Custom page header */
 .header {
-    /*border-bottom: 1px solid #e5e5e5;*/
-}
+
+    .logo {
+        height: 100px;
+        width: 200px;
+        background: url("/images/logo.jpg");
+        background-size: 250px;
+        background-position: -55px;
+    }
 
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px; 
+    }
+
 }
 
 /* Custom page footer */
@@ -90,9 +98,3 @@ body {
     }
 }
 
-
-.logo {
-    border: 1px solid red;
-    height: 10px;
-    width: 10px;
-}
