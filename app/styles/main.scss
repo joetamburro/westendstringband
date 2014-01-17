@@ -29,7 +29,7 @@ body {
 
 /* Custom page header */
 .header {
-    background: #88A7C6;
+    background: blue;
     height: 100px;
 
     img {
@@ -61,8 +61,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: #fff;
+    background: url('images/bandpic.png');
     padding: 0;
 }
 
@@ -144,4 +143,21 @@ a {
 .icons li img {
     height: 25px;
     width: 60px;
+}
+
+.bandpic {
+    background: url('/images/bandpic.png') no-repeat;
+    height: 400px;
+    width: 960px;
+}
+
+.paper {
+display: inline-block;
+height: 200px;
+width: 200px;
+background: url("/images/bandpic.png");
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #EEE, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #EEE, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+-webkit-transform: rotate(-17deg);
+background-size: 206px;
+background-position-x: 16px;
 }
