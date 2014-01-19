@@ -100,6 +100,8 @@ body {
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
+        background: url('/images/fabric/fabric.png');
+        height: 600px;
     }
 }
 
@@ -216,7 +218,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 25px;
-    /*left: 242px;*/
+    border-radius: 2px;
     height: 150px;
     width: 150px;
     background: #fff;
@@ -232,6 +234,8 @@ a {
     left: 8px;
     height: 135px;
     width: 135px;
+    border-radius: 2px;
+    border: 0.7px solid #c1c1c1;
     background: url("/images/bandpic.png");
     -webkit-transform: rotate(-13deg);
     z-index: 6;
@@ -242,7 +246,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 25px;
-    /*left: 242px;*/
+    border-radius: 2px;
     height: 150px;
     width: 150px; 
     background: #fff;
@@ -255,7 +259,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 25px;
-    /*left: 242px;*/
+    border-radius: 2px;
     height: 150px;
     width: 150px;
     background: #FFF;
