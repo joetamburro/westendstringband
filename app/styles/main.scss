@@ -152,7 +152,10 @@ a {
     }
 
     li a:hover {
-
+        display: inline-block;
+        background: none;
+        color: #9E998D;
+        text-decoration: underline;
     }
 
 }
