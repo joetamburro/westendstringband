@@ -2,6 +2,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+@import url(http://fonts.googleapis.com/css?family=Lancelot);
 
 .browsehappy {
     margin: 0.2em 0;
@@ -29,7 +30,7 @@ body {
 
 /* Custom page header */
 .header {
-    background: blue;
+    background: url('/images/header.png');
     height: 100px;
 
     img {
@@ -102,9 +103,6 @@ body {
     }
 }
 
-.link {
-    color: #fff;
-}
 
 a {
     color: white;
@@ -113,6 +111,23 @@ a {
 .head {
     position: relative;
     padding: 0;
+}
+
+.wesb {
+    display: inline-block;
+    font-family: 'Lancelot', cursive;
+    font-size: 32px;
+    margin-top: 20px;
+    line-height: 26px;
+
+    #west-end {
+        margin-left: 12px;
+        color: #645F53;
+    }
+
+    #string-band {
+        color: #645F53;
+    }
 }
 
 .nav li {
@@ -127,7 +142,19 @@ a {
 
 .links {
     display: inline-block;
-    margin-bottom: 25px;
+    margin-top: 16px;
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #BAB8B8;*/
+
+    li a {
+        color: #9E998D;
+        font-family: 'Linden Hill', serif;
+    }
+
+    li a:hover {
+
+    }
+
 }
 
 .icons li {
@@ -152,12 +179,65 @@ a {
 }
 
 .paper {
-display: inline-block;
-height: 200px;
-width: 200px;
-background: url("/images/bandpic.png");
-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #EEE, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #EEE, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
--webkit-transform: rotate(-17deg);
-background-size: 206px;
-background-position-x: 16px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background: url("/images/bandpic.png");
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #EEE, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #EEE, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    -webkit-transform: rotate(-17deg);
+    background-size: 206px;
+    background-position-x: 16px;
+}
+
+/*image layers*/
+.layer-1 {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 242px;
+    height: 150px;
+    width: 150px;
+    background: #fff;
+    border: 1px solid #c1c1c1;
+    -webkit-transform: rotate(-13deg);
+    z-index: 5;
+}
+
+.bandpic {
+    display: inline-block;
+    position: absolute;
+    top: 32px;
+    left: 250px;
+    height: 135px;
+    width: 135px;
+    background: url("/images/bandpic.png");
+    -webkit-transform: rotate(-13deg);
+    z-index: 6;
+    background-size: 135px;
+}
+
+.layer-2 {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 242px;
+    height: 150px;
+    width: 150px; 
+    background: #fff;
+    border: 1px solid #c1c1c1;
+    -webkit-transform: rotate(-16deg);
+    z-index: 4;
+}
+
+.layer-3 {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 242px;
+    height: 150px;
+    width: 150px;
+    background: #FFF;
+    border: 1px solid #C1C1C1;
+    -webkit-transform: rotate(-19deg);
+    z-index: 3;
 }
