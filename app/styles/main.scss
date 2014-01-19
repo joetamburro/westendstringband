@@ -111,6 +111,7 @@ a {
 .head {
     position: relative;
     padding: 0;
+    min-width: 800px;
 }
 
 .wesb {
@@ -160,6 +161,16 @@ a {
 
 }
 
+/*.frame:before,
+.frame:after {
+    content: " ";
+    display: table;
+}
+
+.frame:after {
+    clear: both;
+}*/
+
 .icons li {
     display: inline-block;
 }
@@ -193,11 +204,19 @@ a {
 }
 
 /*image layers*/
+.frame {
+    display: inline-block;
+    height: 170px;
+    width: 170px;
+    position: relative;
+    left: 40px;
+}
+
 .layer-1 {
     display: inline-block;
     position: absolute;
     top: 25px;
-    left: 242px;
+    /*left: 242px;*/
     height: 150px;
     width: 150px;
     background: #fff;
@@ -210,7 +229,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 32px;
-    left: 250px;
+    left: 8px;
     height: 135px;
     width: 135px;
     background: url("/images/bandpic.png");
@@ -223,7 +242,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 25px;
-    left: 242px;
+    /*left: 242px;*/
     height: 150px;
     width: 150px; 
     background: #fff;
@@ -236,7 +255,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 25px;
-    left: 242px;
+    /*left: 242px;*/
     height: 150px;
     width: 150px;
     background: #FFF;
