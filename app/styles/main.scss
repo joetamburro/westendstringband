@@ -80,6 +80,7 @@ body {
     margin-top: 28px;
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
@@ -114,6 +115,16 @@ a {
     position: relative;
     padding: 0;
     min-width: 800px;
+
+    h4 {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        font-size: 20px;
+        letter-spacing: 0px;
+        display: inline-block;
+        font-family: cursive; 
+    }  
 }
 
 .wesb {
@@ -145,7 +156,9 @@ a {
 
 .links {
     display: inline-block;
-    margin-top: 16px;
+    position: absolute;
+    right: 0;
+    top: 46px;
     font-size: 18px;
     /*text-shadow: 1px 1px 1px #BAB8B8;*/
 
@@ -163,15 +176,6 @@ a {
 
 }
 
-/*.frame:before,
-.frame:after {
-    content: " ";
-    display: table;
-}
-
-.frame:after {
-    clear: both;
-}*/
 
 .icons li {
     display: inline-block;
@@ -266,4 +270,14 @@ a {
     border: 1px solid #C1C1C1;
     -webkit-transform: rotate(-19deg);
     z-index: 3;
+}
+.container p {
+    font-size: 12px;
+    text-align: left;
+}
+
+.group-pic {
+    float: right;
+    height: 300px;
+    width: 250px;   
 }
