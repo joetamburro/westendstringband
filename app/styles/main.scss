@@ -1,5 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+
 @import 'sass-bootstrap/lib/bootstrap';
 
 @import url(http://fonts.googleapis.com/css?family=Lancelot);
@@ -30,13 +32,27 @@ body {
 
 /* Custom page header */
 .header {
-    background: url('/images/header.png');
-    height: 100px;
+    background: url('/images/instruments.jpg')no-repeat center center;
+    background-size: 100%;
+    /*background-attachment: fixed;*/
+    height: 400px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition-properties: height;
+    transition: 500;
 
     img {
         display: inline-block;
         height: 90px;
         width: 225px;
+    }
+
+    .overlay {
+        background: rgba(171, 99, 8, 0.68);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
     }
 
 /* Make the masthead heading the same height as the navigation */
@@ -106,15 +122,23 @@ body {
     }
 }
 
-
-a {
-    color: white;
-}
-
 .head {
     position: relative;
     padding: 0;
     min-width: 800px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+        display: inline-block;
+        letter-spacing: 8px;
+        font-weight: 600;
+        font-size: 42px;
+        position: relative;
+        top: 75px;
+        line-height: 44px;
+    }
 
     h4 {
         position: absolute;
@@ -154,24 +178,31 @@ a {
     text-decoration: underline;
 }
 
-.links {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 46px;
-    font-size: 18px;
-    /*text-shadow: 1px 1px 1px #BAB8B8;*/
+.nav-items{
+    padding-top: 20px;
 
-    li a {
-        color: #9E998D;
-        font-family: 'Linden Hill', serif;
-    }
+    ul{
+        margin-top: 15px;
+        list-style-type: none;
+        font-size: 18px;
 
-    li a:hover {
-        display: inline-block;
-        background: none;
-        color: #9E998D;
-        text-decoration: underline;
+        li {
+            display: inline-block;
+            font-family: 'Source Sans Pro', sans-serif;
+        
+            a {
+                color: #fff;
+                margin-right: 45px;
+                font-weight: 600;
+            }
+
+            a:hover {
+                display: inline-block;
+                background: none;
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
     }
 
 }
@@ -212,65 +243,40 @@ a {
 /*image layers*/
 .frame {
     display: inline-block;
-    height: 170px;
-    width: 170px;
+    height: 300px;
+    width: 300px;
     position: relative;
-    left: 40px;
 }
 
 .layer-1 {
     display: inline-block;
     position: absolute;
-    top: 25px;
+    top: 0px;
+    left: 0px;
     border-radius: 2px;
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     background: #fff;
     border: 1px solid #c1c1c1;
-    -webkit-transform: rotate(-13deg);
+    // -webkit-transform: rotate(-13deg);
     z-index: 5;
 }
 
 .bandpic {
     display: inline-block;
     position: absolute;
-    top: 32px;
-    left: 8px;
-    height: 135px;
-    width: 135px;
+    top: 0px;
+    left: 0px;
+    height: 290px;
+    width: 290px;
     border-radius: 2px;
     border: 0.7px solid #c1c1c1;
     background: url("/images/bandpic.png");
-    -webkit-transform: rotate(-13deg);
+    // -webkit-transform: rotate(-13deg);
     z-index: 6;
-    background-size: 135px;
+    background-size: 300px;
 }
 
-.layer-2 {
-    display: inline-block;
-    position: absolute;
-    top: 25px;
-    border-radius: 2px;
-    height: 150px;
-    width: 150px; 
-    background: #fff;
-    border: 1px solid #c1c1c1;
-    -webkit-transform: rotate(-16deg);
-    z-index: 4;
-}
-
-.layer-3 {
-    display: inline-block;
-    position: absolute;
-    top: 25px;
-    border-radius: 2px;
-    height: 150px;
-    width: 150px;
-    background: #FFF;
-    border: 1px solid #C1C1C1;
-    -webkit-transform: rotate(-19deg);
-    z-index: 3;
-}
 .container p {
     font-size: 12px;
     text-align: left;
@@ -280,4 +286,35 @@ a {
     float: right;
     height: 300px;
     width: 250px;   
+}
+
+.band {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #F00;
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin-top: 100px;
+}
+
+.bio {
+    display: inline-block;
+    border: 1px solid red;
+    height: 500px;
+    width: 600px;
+    margin-top: 46px;
+    text-align: left;
+    padding: 8px 12px 0 0;
+}
+
+.box {
+    background: black;
+    height: 100px;
+    width: 100px;
+}
+
+.hide {
+    height: 0px;
+    width: 0px;
 }
