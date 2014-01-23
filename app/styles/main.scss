@@ -71,6 +71,7 @@ body {
     color: #777;
     background: #7E786C;
     display: block;
+    height: 200px;
 }
 
 .container-narrow > hr {
@@ -83,6 +84,7 @@ body {
     background: url('images/bandpic.png');
     padding: 0;
     height: 100%;
+    margin-bottom: 0;
 }
 
 .jumbotron .btn {
@@ -215,20 +217,7 @@ body {
 }
 
 
-.icons li {
-    display: inline-block;
-}
 
-.facebook {
-    position: absolute;
-    right: 0;
-    top: 55px;
-}
-
-.icons li img {
-    height: 25px;
-    width: 60px;
-}
 
 .bandpic {
     background: url('/images/bandpic.png') no-repeat;
@@ -321,7 +310,7 @@ body {
     }
 }
 
-.shows-section {
+.shows-section, .connect {
     padding-top: 20px;
     background: #E6E6E6;
 
@@ -366,4 +355,54 @@ body {
 
         }
     }
+}
+
+// connect section 
+
+.connect {
+    height: 200px;
+    background: #A79E8D;
+}
+
+.icons {
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        margin-left: 20px;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    .gig-salad, .gig-masters {
+        border-radius: 6px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .cd-baby, .wedding-wire {
+        height: 86px;
+        width: 86px;
+    }
+}
+
+.facebook {
+    position: absolute;
+    right: 0;
+    top: 55px;
+}
+
+.icons li img {
+    height: 100px;
+    width: 100px;
+}
+
+// symbolset
+
+.ss-mail {
+    color: white;
 }
