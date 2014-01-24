@@ -15,31 +15,60 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 body * {
     vertical-align: top;
+    padding: 0;
+    margin: 0;
 }
 /* Space out content a bit */
 body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
     padding-top: 0;
     padding-bottom: 0;
+    min-width: 1300px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Custom page header */
 .header {
-    background: url('/images/instruments.jpg')no-repeat center center fixed;
+    background: url('/images/instruments.jpg')no-repeat center center;
     background-size: 100%;
     background-position: 0 -350px;
     height: 400px;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     transition-properties: height;
-    transition: 500;
+    // transition: 500;
+
+    // @media (max-width: 1130px){
+    //       background: url('/images/instruments.jpg')no-repeat center center fixed;
+    //     background-size: 100%;
+    //     background-position: 0 -150px;
+    //     height: 400px;
+    //     width: 100%;
+    //     font-family: 'Source Sans Pro', sans-serif;
+    //     transition-properties: height;
+    //     transition: 500;  
+    // }
+
+    // @media (max-width: 860px){
+    //       background: url('/images/instruments.jpg')no-repeat center center fixed;
+    //     background-size: 100%;
+    //     background-position: 0 -50px;
+    //     height: 400px;
+    //     width: 100%;
+    //     font-family: 'Source Sans Pro', sans-serif;
+    //     transition-properties: height;
+    //     transition: 500;  
+    // }
+
 
     img {
         display: inline-block;
@@ -53,6 +82,14 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
+
+        // @media (max-width: 770px){
+        //     background: rgba(171, 99, 8, 0.68);
+        //     top: 0;
+        //     left: 0;
+        //     height: 100%;
+        //     width: 100%;
+        // }
     }
 
 /* Make the masthead heading the same height as the navigation */
@@ -65,13 +102,28 @@ body {
 
 }
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
 /* Custom page footer */
 .footer {
     padding-top: 19px;
     color: #777;
     background: #7E786C;
     display: block;
-    height: 200px;
+    height: 106px;
+
+    .container {
+        width: 600px;
+    }
+
+    h3 {
+        text-align: center;
+        color: #504A41;
+        font-weight: 600;
+        margin-top: 0;
+    }
 }
 
 .container-narrow > hr {
@@ -81,7 +133,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    background: url('images/bandpic.png');
+    background: url('/images/fabric/fabric.png');
     padding: 0;
     height: 100%;
     margin-bottom: 0;
@@ -103,35 +155,43 @@ body {
 
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 960px;
+// @media screen and (min-width: 768px) {
+//     .container {
+//         max-width: 960px;
+//         padding: 0;
 
-        a:hover {
-            text-decoration: none;
-        }
-    }
+//         @media screen and (max-width: 800px) {
+//             max-width: 500px;
+//         }
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 0px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-        background: url('/images/fabric/fabric.png');
+//         a:hover {
+//             text-decoration: none;
+//         }
+//     }
 
-        .shows-section {
-            background: #C8C3C0;
-        }
-    }
+//     /* Remove the padding we set earlier */
+//     .header,
+//     .marketing,
+//     .footer {
+//         padding-left: 0;
+//         padding-right: 0;
+//     }
+//     /* Space out the masthead */
+//     .header {
+//         margin-bottom: 0px;
+//     }
+//     /* Remove the bottom border on the jumbotron for visual effect */
+//     .jumbotron {
+//         border-bottom: 0;
+//         background: url('/images/fabric/fabric.png');
+
+//         .shows-section {
+//             background: #C8C3C0;
+//         }
+//     }
+// }
+.main {
+    background: url('/images/fabric/fabric.png');
 }
 
 .head {
@@ -148,7 +208,7 @@ body {
         font-weight: 600;
         font-size: 42px;
         position: relative;
-        top: 75px;
+        top: 100px;
         line-height: 44px;
     }
 
@@ -253,7 +313,7 @@ body {
     top: 0px;
     left: 0px;
     border-radius: 2px;
-    height: 370px;
+    height: 360px;
     width: 312px;
     background: #fff;
     border: 1px solid #c1c1c1;
@@ -266,7 +326,7 @@ body {
     position: absolute;
     top: 11px;
     left: 11px;
-    height: 348px;
+    height: 338px;
     width: 290px;
     border-radius: 2px;
     border: 1px solid #B4B4B4;
@@ -281,6 +341,9 @@ body {
     text-align: left;
     font-weight: 600;
     line-height: 18px;
+    position: relative;
+    top: 36px;
+
 }
 
 .container #find {
@@ -311,18 +374,26 @@ body {
     width: 600px;
     text-align: left;
 
-    h2, p {
+    h2 {
+        color: #7c7668;
+        font-weight: 600;
+        position: relative;
+        top: 15px;
+    }
+
+    p {
         color: #7c7668;
         font-weight: 600;
     }
 }
 
 .shows-section, .connect {
-    padding-top: 20px;
+    padding-top: 16px;
     background: #E6E6E6;
-    height: 450px;
+    padding-bottom: 45px;
 
     h2, p {
+        margin-top: 20px;
         color: #7c7668;
         font-weight: 600;
     }
@@ -341,12 +412,13 @@ body {
         padding-left: 0;
     
         li {
-            list-style-type: none;
-            width: 625px;
             display: block;
+            margin: 0 auto;
+            padding-top: 8px;
+            width: 625px;
             text-align: left;
             border-bottom: 1.8px dashed #838383;
-            margin: 0 auto;
+            list-style-type: none;
 
 
             h3 {
@@ -376,7 +448,7 @@ body {
 // connect section 
 
 .connect {
-    height: 235px;
+    height: 260px;
     background: #A79E8D;
 }
 
@@ -385,7 +457,8 @@ body {
 
     position: relative;
     margin-top: 28px;
-    -webkit-filter: sepia(0.8);
+    padding: 0;
+    // -webkit-filter: grayscale(0.7);
 
     a:hover {
         cursor: pointer;
@@ -471,10 +544,59 @@ body {
     top: 55px;
 }
 
-// symbolset
-
-.ss-mail {
-    color: #CB9B40;
-    font-size: 56px;
+.livestream {
+    background: url("../images/livestream.png");
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    background-size: 145px;
+    background-position: 6px 0px;
+    float: right;
+    position: relative;
+    bottom: 4px;
+    margin-left: 60px;
 }
+
+.info {
+    display: inline-block;
+    color: #E5E2DC;
+    list-style-type: none;
+    padding-left: 0;
+    width: 600px;    
+
+    li {
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+
+    a{
+        color: #E5E2DC; 
+        text-decoration: none; 
+    }   
+    
+    .contact-text {
+        margin-top: 10px;
+    }
+
+    .ss-mail {
+        display: inline-block;
+        color: #D4CCBE;
+        font-size: 28px;
+    }
+    
+    .ss-phone {
+        display: inline-block;
+        display: inline-block;
+        color: #D4CCBE;
+        font-size: 28px;
+        margin-left: 86px;
+    }
+
+}
+
+
+
+
 
