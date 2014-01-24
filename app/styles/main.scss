@@ -32,9 +32,9 @@ body {
 
 /* Custom page header */
 .header {
-    background: url('/images/instruments.jpg')no-repeat center center;
+    background: url('/images/instruments.jpg')no-repeat center center fixed;
     background-size: 100%;
-    /*background-attachment: fixed;*/
+    background-position: 0 -350px;
     height: 400px;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
@@ -106,6 +106,10 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 960px;
+
+        a:hover {
+            text-decoration: none;
+        }
     }
 
     /* Remove the padding we set earlier */
@@ -123,7 +127,6 @@ body {
     .jumbotron {
         border-bottom: 0;
         background: url('/images/fabric/fabric.png');
-        height: 542px;
 
         .shows-section {
             background: #C8C3C0;
@@ -280,6 +283,10 @@ body {
     line-height: 18px;
 }
 
+.container #find {
+    color: #635D53;
+}
+
 .group-pic {
     float: right;
     height: 300px;
@@ -313,6 +320,7 @@ body {
 .shows-section, .connect {
     padding-top: 20px;
     background: #E6E6E6;
+    height: 450px;
 
     h2, p {
         color: #7c7668;
@@ -334,23 +342,31 @@ body {
     
         li {
             list-style-type: none;
-            width: 475px;
-            display: inline-block;
+            width: 625px;
+            display: block;
             text-align: left;
             border-bottom: 1.8px dashed #838383;
+            margin: 0 auto;
 
 
             h3 {
-                color: #7C7668;
                 display: inline-block;
-                width: 200px;
+                font-size: 20px; 
+                color: #7C7668;
+                width: 75px;
                 margin-top: 9px;
                 text-align: left;
             }
 
             span {
                 color: #B78139;
+                font-size: 18px;
                 font-weight: 600;
+                margin-right: 10px;
+            }
+
+            .pull-right {
+                color: #7C7668;
             }
 
         }
@@ -360,34 +376,93 @@ body {
 // connect section 
 
 .connect {
-    height: 200px;
+    height: 235px;
     background: #A79E8D;
 }
 
 .icons {
 
-    li {
-        display: inline-block;
-    }
 
-    a {
-        margin-left: 20px;
-    }
+    position: relative;
+    margin-top: 28px;
+    -webkit-filter: sepia(0.8);
 
     a:hover {
         cursor: pointer;
+        text-decoration: none;
     }
 
-    .gig-salad, .gig-masters {
-        border-radius: 6px;
-        height: 90px;
-        width: 90px;
-    }
+    li {
+        display: inline-block;
 
-    .cd-baby, .wedding-wire {
-        height: 86px;
-        width: 86px;
+        div {
+            margin: 0px 15px;
+        }
+       
+        .wedding-wire {
+            border-radius: 2px;
+            border: 4px solid #808080;
+            height: 90px;
+            width: 90px;
+            background: url("../images/weddingwire.png");
+            background-size: 119%;
+            background-position: -8px -9px;
+        } 
+    
+        .gig-salad {
+            border-radius: 2px;
+            border: 4px solid #808080;
+            height: 90px;
+            width: 90px;
+            background: url("../images/gigsalad.png");
+            background-size: 143%;
+            background-position: -17px -10px;
+        }
+    
+        .gig-masters {
+            border-radius: 2px;
+            border: 4px solid #808080;
+            height: 90px;
+            width: 90px;
+            background: url("../images/gigmasters.png");
+            background-size: 101%;
+            background-position: 1px 0px;
+        }
+
+        .cd-baby{
+            border-radius: 2px;
+            border: 4px solid #808080;
+            height: 90px;
+            width: 90px;
+            background: url("../images/cdbaby.png");
+            background-size: 106%;
+            background-position: -3px -3px;
+        }
+
+        .reverb {
+            border-radius: 2px;
+            border: 4px solid #808080;
+            height: 90px;
+            width: 90px;
+            background: url('../images/rn.png');
+            background-size: 119%;
+            background-position: -8px -8px;
+        }
+
     }
+}
+
+.icons-overlay {
+    background: rgba(213, 188, 156, 0.87);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.ww {
+    border-radius: 14px;  
 }
 
 .facebook {
@@ -396,13 +471,10 @@ body {
     top: 55px;
 }
 
-.icons li img {
-    height: 100px;
-    width: 100px;
-}
-
 // symbolset
 
 .ss-mail {
-    color: white;
+    color: #CB9B40;
+    font-size: 56px;
 }
+
