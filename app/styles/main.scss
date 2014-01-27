@@ -17,6 +17,8 @@ body * {
     vertical-align: top;
     padding: 0;
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
 /* Space out content a bit */
 body {
@@ -25,7 +27,7 @@ body {
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
-    min-width: 1300px;
+    min-width: 1130px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -192,6 +194,7 @@ body {
 // }
 .main {
     background: url('/images/fabric/fabric.png');
+    height: 796px;
 }
 
 .head {
@@ -204,12 +207,12 @@ body {
 
     h1 {
         display: inline-block;
-        letter-spacing: 8px;
+        letter-spacing: 4px;
         font-weight: 600;
-        font-size: 42px;
+        font-size: 60px;
         position: relative;
-        top: 100px;
-        line-height: 44px;
+        top: 92px;
+        line-height: 54px;
     }
 
     h4 {
@@ -263,9 +266,10 @@ body {
             font-family: 'Source Sans Pro', sans-serif;
         
             a {
-                color: #fff;
-                margin-right: 60px;
+                color: #FFF;
+                margin-right: 35px;
                 font-weight: 600;
+                margin-left: 35px;
             }
 
             a:hover {
@@ -313,7 +317,7 @@ body {
     top: 0px;
     left: 0px;
     border-radius: 2px;
-    height: 360px;
+    height: 350px;
     width: 312px;
     background: #fff;
     border: 1px solid #c1c1c1;
@@ -326,7 +330,7 @@ body {
     position: absolute;
     top: 11px;
     left: 11px;
-    height: 338px;
+    height: 330px;
     width: 290px;
     border-radius: 2px;
     border: 1px solid #B4B4B4;
@@ -337,13 +341,10 @@ body {
 
 
 .container p {
-    font-size: 12px;
+    font-size: 18px;
     text-align: left;
     font-weight: 600;
-    line-height: 18px;
-    position: relative;
-    top: 36px;
-
+    line-height: 24px;
 }
 
 .container #find {
@@ -359,43 +360,53 @@ body {
 .band {
     display: inline-block;
     position: relative;
-    height: 391px;
+    height: 350px;
     width: 300px;
     float: left;
     margin-top: 88px;
     left: -10px;
+    margin-right: 18px;
+    margin-left: 10px;
 }
 
 .bio {
     display: inline-block;
     margin-top: 22px;
     margin-left: 15px;
-    height: 500px;
-    width: 600px;
+    // height: 500px;
+    // width: 600px;
     text-align: left;
 
     h2 {
-        color: #7c7668;
+        color: #7C7668;
         font-weight: 600;
         position: relative;
-        top: 15px;
+        top: 40px;
+        letter-spacing: 2px;
     }
 
     p {
         color: #7c7668;
-        font-weight: 600;
+        font-weight: 400;
+        position: relative;
+        top: 4px;
+        line-height: 26px;
     }
 }
 
 .shows-section, .connect {
-    padding-top: 16px;
+    padding-top: 45px;
     background: #E6E6E6;
-    padding-bottom: 45px;
+    padding-bottom: 80px;
 
     h2, p {
         margin-top: 20px;
         color: #7c7668;
         font-weight: 600;
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 }
 
@@ -448,8 +459,10 @@ body {
 // connect section 
 
 .connect {
-    height: 260px;
+    height: 325px;
     background: #A79E8D;
+    padding-bottom: 40px;
+    padding-top: 60px;
 }
 
 .icons {
@@ -547,9 +560,9 @@ body {
 .livestream {
     background: url("../images/livestream.png");
     height: 30px;
-    width: 150px;
+    width: 140px;
     display: inline-block;
-    background-size: 145px;
+    background-size: 138px;
     background-position: 6px 0px;
     float: right;
     position: relative;
