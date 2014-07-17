@@ -194,7 +194,6 @@ body {
 // }
 .main {
     background: url('/images/fabric/fabric.png');
-    height: 796px;
 }
 
 .head {
@@ -391,6 +390,7 @@ body {
         position: relative;
         top: 4px;
         line-height: 26px;
+        margin-bottom: 65px;
     }
 }
 
@@ -610,6 +610,9 @@ body {
 }
 
 
-
+.cd-cover {
+    float: right;
+    margin-left: 30px;
+}
 
 
