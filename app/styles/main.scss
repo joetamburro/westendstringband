@@ -40,7 +40,7 @@ body {
 
 /* Custom page header */
 .header {
-    background: url('images/instruments.png')no-repeat center center;
+    background: url('../images/instruments.png') no-repeat center center;
     background-size: 100%;
     background-position: 0 -350px;
     height: 400px;
@@ -135,7 +135,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    background: url('/images/fabric/fabric.png');
+    background: url('../images/fabric/fabric.png');
     padding: 0;
     height: 100%;
     margin-bottom: 0;
@@ -193,7 +193,7 @@ body {
 //     }
 // }
 .main {
-    background: url('/images/fabric/fabric.png');
+    background: url('../images/fabric/fabric.png');
 }
 
 .head {
@@ -286,7 +286,7 @@ body {
 
 
 .bandpic {
-    background: url('/images/bandpic.png') no-repeat;
+    background: url('../images/bandpic.png') no-repeat;
     height: 400px;
     width: 960px;
 }
@@ -295,7 +295,7 @@ body {
     display: inline-block;
     height: 200px;
     width: 200px;
-    background: url("/images/bandpic.png");
+    background: url("../images/bandpic.png");
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #EEE, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #EEE, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
     -webkit-transform: rotate(-17deg);
     background-size: 206px;
@@ -333,7 +333,7 @@ body {
     width: 290px;
     border-radius: 2px;
     border: 1px solid #B4B4B4;
-    background: url("/images/bandpic.png");
+    background: url("../images/bandpic.png");
     z-index: 6;
     background-size: 300px;
 }
@@ -558,7 +558,7 @@ body {
 }
 
 .livestream {
-    background: url("/images/livestream.png");
+    background: url("../images/livestream.png");
     height: 30px;
     width: 140px;
     display: inline-block;
